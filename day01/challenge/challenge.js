@@ -27,8 +27,8 @@ const dureeEnMois = 24;
 const revenuMensuel = 8000;
 
 
-const mensualiteEstimee = montantEmprunte / dureeEnMois; // القسط الشهري
-const capaciteEndettement = revenuMensuel * 0.30;       // 30% من الدخل الشهري
+const mensualiteEstimee = montantEmprunte / dureeEnMois; 
+const capaciteEndettement = revenuMensuel * 0.30;       
 
 if (mensualiteEstimee <= capaciteEndettement) {
   
