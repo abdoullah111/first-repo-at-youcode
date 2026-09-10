@@ -18,7 +18,9 @@
 let motDePasse = "faux";
 do{
     console.log("Veuillez entrer le mot de passe")
-    if (motDePasse = "secret")
-        
-}
+    motDePasse = "secret"
+
+}while (motDePasse !== "secret")
+
+
 
