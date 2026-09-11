@@ -16,3 +16,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let tableau = ["pomme", "banane", "pomme", "orange", "banane", "pomme"];
+
+let nb = [];
+for (let i =0; i < tableau.length; i++){
+    let things = tableau[i];
+    if(nb[things] === undefined){
+        nb[things] = 1
+    }else {
+        nb[things] ++;
+    }
+}
+console.log(nb)
