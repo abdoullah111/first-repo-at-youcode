@@ -16,3 +16,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let tableau = ["Prix", 15.5, null, "Quantite", 3, undefined, "Total", 46.5];
+let nb = [];
+for (let i= 0; i < tableau.length; i++){
+    
+    if(typeof tableau[i] === "number"){
+        nb.push(tableau[i])
+    }
+    }
+
+console.log(nb)
