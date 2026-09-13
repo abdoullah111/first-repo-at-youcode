@@ -1,25 +1,18 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 03 · EXERCICE 15 · NIVEAU 3 : DÉFI (AVANCÉS)
- * RÉCURSIVITÉ (LE CONCEPT QUI RETOURNE LE CERVEAU)
+ * JOUR 04 · EXERCICE 15 · NIVEAU 3 : DÉFI (AVANCÉS)
+ * VÉRIFICATEUR D'ANAGRAMME
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Recréez la fonction fibonacci(n) (qui retourne le Nième terme de la suite) en utilisant la *récursivité* (la fonction s'appelle elle-même).
- * Condition d'arrêt : Si n <= 1, return n.
+ * Vérifiez si "chien" et "niche" sont des anagrammes (elles contiennent exactement les mêmes lettres, même quantité).
+ * Indice : vous pouvez les transformer en tableau, les trier, et les rejoindre.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-15
- * ▶️ Commande : node day03/exercices/exercice-15.js
+ * ▶️ Commande : node day04/exercices/exercice-15.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-function fibonacci(n){
-    if(n <= 1){
-        return n;
-    }
-    return fibonacci (n-1) + fibonacci (n-2);
-}
-console.log(fibonacci(5))

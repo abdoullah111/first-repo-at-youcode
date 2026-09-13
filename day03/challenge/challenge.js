@@ -10,7 +10,8 @@
  * Consignes :
  * 1. Déclarez une variable globale (hors des fonctions) or = 0.
  * 2. Créez une fonction ajouterOr(montant) qui ajoute à la bourse et affiche "Vous avez ramassé [montant] or. Total: [or]".
- * 3. Créez une fonction depenserOr(montant) qui vérifie si le héros a assez d'or. Si oui, déduit l'or et affiche l'achat. Sinon, affiche "Fonds insuffisants".
+ * 3. Créez une fonction depenserOr(montant) qui vérifie si le héros a assez d'or. Si oui,
+ *  déduit l'or et affiche l'achat. Sinon, affiche "Fonds insuffisants".
  * 4. Créez une fonction combatGagne() qui appelle ajouterOr avec un montant aléatoire entre 10 et 50.
  * 5. Simulez une aventure : gagnez 3 combats, puis tentez d'acheter une épée à 100 or.
  * Bonus : Utilisez des closures pour éviter d'avoir or en variable globale vulnérable !
@@ -22,3 +23,27 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+let or = 0
+function ajouterOr(montant){
+    or+=montant;
+    console.log("Vous avez ramassé " + montant + "or. Total: " + or)
+}
+function depenserOr(montant){
+    if(or >= montant){
+        or -= montant
+        console.log("acha a reussi ")
+    }else{
+        console.log("Fonds insuffisants")
+    }
+
+}
+ function combatGagne (){
+    const gain = Math.floor(Math.random()*(50-10+1))+10;
+    ajouterOr(gain);
+}
+
+combatGagne()
+combatGagne()
+combatGagne()
+
+depenserOr(10)

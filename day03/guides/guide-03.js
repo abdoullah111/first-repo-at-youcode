@@ -10,3 +10,7 @@
 'use strict';
 
 // TODO: écris ta solution ici.
+function carre(x){
+    return x * x
+}
+console.log(carre (5))
