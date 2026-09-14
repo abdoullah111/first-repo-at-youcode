@@ -15,6 +15,11 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> temp
 function information (email){
     for(let i=0; i<= email.length; i++)
         if(email.includes("@")){
@@ -23,4 +28,9 @@ function information (email){
             return false;
         }
 }
+<<<<<<< HEAD
 console.log(information("piktas1337@gmail.com"))
+=======
+console.log(information("piktas1337@gmail.com"))
+>>>>>>> 5816fb2 (day05)
+>>>>>>> temp

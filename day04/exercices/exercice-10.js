@@ -15,9 +15,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> temp
 function information(email){
     let index = email.indexOf("@")
     let result= email.slice(index + 1)
     return result
 }
+<<<<<<< HEAD
 console.log(information("contact@youcode.ma"))
+=======
+console.log(information("contact@youcode.ma"))
+>>>>>>> 5816fb2 (day05)
+>>>>>>> temp

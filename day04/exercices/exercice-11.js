@@ -16,6 +16,11 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> temp
 function  ex(phrase){
     let words = phrase.split(" ");
     let result= "";
@@ -26,3 +31,7 @@ function  ex(phrase){
 }
 
 console.log(ex("Hyper Text Markup Language"))
+<<<<<<< HEAD
+=======
+>>>>>>> 5816fb2 (day05)
+>>>>>>> temp

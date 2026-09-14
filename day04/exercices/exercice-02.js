@@ -15,6 +15,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
 let mot = "programmation"
 console.log(mot[0])
 console.log(mot.length-1)
+=======
+<<<<<<< HEAD
+=======
+let mot = "programmation"
+console.log(mot[0])
+console.log(mot.length-1)
+>>>>>>> 5816fb2 (day05)
+>>>>>>> temp

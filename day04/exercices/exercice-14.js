@@ -15,8 +15,18 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> temp
 let mots = "name password   error   tittle status"
 let words = mots.trim();
 let x = words.split(/\s+/)
 let result = x.length;
+<<<<<<< HEAD
 console.log(result)
+=======
+console.log(result)
+>>>>>>> 5816fb2 (day05)
+>>>>>>> temp

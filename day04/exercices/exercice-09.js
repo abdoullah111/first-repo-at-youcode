@@ -15,7 +15,17 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
 let phrase = "Ne sois pas idiot, réfléchis avant de parler.";
 
 let result = phrase.replace("idiot", "*")
 console.log(result)
+=======
+<<<<<<< HEAD
+=======
+let phrase = "Ne sois pas idiot, réfléchis avant de parler.";
+
+let result = phrase.replace("idiot", "*")
+console.log(result)
+>>>>>>> 5816fb2 (day05)
+>>>>>>> temp
