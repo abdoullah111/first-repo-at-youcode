@@ -15,18 +15,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> temp
+
 let phrase = "Bonjour le monde";
 
 let reverse= phrase.split(" ").reverse().join(" ");
 
-<<<<<<< HEAD
+
 console.log(reverse)
-=======
-console.log(reverse)
->>>>>>> 5816fb2 (day05)
->>>>>>> temp
