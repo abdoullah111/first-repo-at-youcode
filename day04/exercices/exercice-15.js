@@ -16,3 +16,14 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let animal = "chien";
+let animal1 = "niche"
+let A = animal.split("").sort().join("")
+let B = animal1.split("").sort().join("")
+
+    if(A.length === B.length && A === B ){
+        console.log("elles contiennent exactement les mêmes lettres, même quantité")
+
+    }else {
+    console.log("elles ne contiennent pas!")
+}
