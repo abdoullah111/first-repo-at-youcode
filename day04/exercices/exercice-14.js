@@ -16,7 +16,7 @@
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
 
-let mots = "name password   error   tittle status"
+let mots = "name password      error       tittle status"
 let words = mots.trim();
 let x = words.split(/\s+/)
 let result = x.length;
