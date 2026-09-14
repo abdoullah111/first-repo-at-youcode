@@ -15,3 +15,11 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
+=======
+function capitaliser(mot){
+    let word = mot.toLowerCase()
+    return word[0].toUpperCase()  + word.slice(1)
+}
+console.log(capitaliser("yOUcoDe"))
+>>>>>>> 5816fb2 (day05)

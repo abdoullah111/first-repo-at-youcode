@@ -16,3 +16,16 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+<<<<<<< HEAD
+=======
+function  ex(phrase){
+    let words = phrase.split(" ");
+    let result= "";
+    for(let word of words){
+        result+= word[0].toUpperCase();
+    }
+    return result;
+}
+
+console.log(ex("Hyper Text Markup Language"))
+>>>>>>> 5816fb2 (day05)
