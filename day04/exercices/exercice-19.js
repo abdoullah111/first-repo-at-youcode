@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Simulez la vérification d'une plaque d'immatriculation marocaine. Le format attendu est "1234-A-56" ou "12345-AB-6". Pour simplifier, vérifiez qu'elle contient deux tirets et qu'une des sections au milieu est une lettre. L'utilisation d'expressions régulières (Regex) est recommandée ici !
+ * Simulez la vérification d'une plaque d'immatriculation marocaine. Le format attendu est "1234-A-56" ou "12345-AB-6". 
+ * Pour simplifier, vérifiez qu'elle contient deux tirets et qu'une des sections au milieu est une lettre. L'utilisation d'expressions régulières (Regex) est recommandée ici !
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-19
  * ▶️ Commande : node day04/exercices/exercice-19.js
@@ -15,3 +16,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let matricule = "1234-A-56"
+function verification(matricule){
+    let search = matricule.match(/-/g)
+   let newMatricule = matricule.split("-");
+   if(search && search.length == 2 && newMatricule.length== 3){
+    let A = newMatricule[0]
+    let B = newMatricule[1]
+    let C = newMatricule[2]
+    if(!isNaN(A) && isNaN(B) && !isNaN(C)){
+        return true;
+    }else{
+        return false;
+    }
+   }
+}
+console.log(verification(matricule))
