@@ -39,3 +39,4 @@ function chiffrerCesar(texte, decalage){
 
 }
 console.log(chiffrerCesar("a", 3))
+console.log(chiffrerCesar("A", 3))
