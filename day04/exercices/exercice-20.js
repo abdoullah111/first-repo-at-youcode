@@ -17,3 +17,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let titre = "Les 10 secrets de JavaScript !"
+function slug(titre){
+    let clean_titre = titre.replace(/[^\w\s-]/g,'').trim().replace(/\s+/g, '-').toLowerCase()
+    return clean_titre
+
+}
+console.log(slug(titre))
