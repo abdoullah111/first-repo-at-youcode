@@ -15,3 +15,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+ let lettre = "Programming is the art of writing logical instructions for computers to solve complex problems and build modern digital solutions."
+function x(lettre){
+    let result= 0;
+    for(let i=0; i < lettre.length; i++){
+        if(lettre[i] === "e" ){
+             result+= 1
+        }
+         
+    }
+    return result
+        
+    
+   
+    
+}
+console.log(x(lettre))
