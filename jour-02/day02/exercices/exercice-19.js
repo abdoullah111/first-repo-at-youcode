@@ -16,3 +16,24 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function genererEchiquier(taille) {
+    let grille = "";
+
+    for (let i = 0; i < taille; i++) {
+        for (let j = 0; j < taille; j++) {
+            
+            if ((i + j) % 2 === 0) {
+                grille += " ";
+            } else {
+                grille += "#";
+            }
+        }
+        
+        grille += "\n";
+    }
+
+    return grille;
+}
+
+
+console.log(genererEchiquier(8));
