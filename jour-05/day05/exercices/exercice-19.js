@@ -15,3 +15,24 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function rechercheBinaire(tableau, cible) {
+    let debut = 0;
+    let fin = tableau.length - 1;
+
+    while (debut <= fin) {
+        let milieu = Math.floor((debut + fin) / 2);
+
+        if (tableau[milieu] === cible) {
+            return milieu; 
+        } else if (tableau[milieu] < cible) {
+            debut = milieu + 1; 
+        } else {
+            fin = milieu - 1; 
+        }
+    }
+
+    return -1; 
+}
+
+let listeTriee = [10, 20, 30, 40, 45, 50, 60];
+console.log(rechercheBinaire(listeTriee, 45)); 
