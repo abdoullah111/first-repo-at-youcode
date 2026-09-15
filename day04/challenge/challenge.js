@@ -10,7 +10,8 @@
  * Consignes :
  * 1. Vous avez une liste (tableau) de mots interdits : ["noob", "idiot", "nul"].
  * 2. Créez une fonction filtrerMessage(message) qui reçoit le message tapé par le joueur.
- * 3. Si le message contient un des mots interdits (peu importe s'il y a des majuscules, ex: "nOOb"), il doit être remplacé par des astérisques de la même longueur (ex: "").
+ * 3. Si le message contient un des mots interdits (peu importe s'il y a des majuscules, ex: "nOOb"), 
+ * il doit être remplacé par des astérisques de la même longueur (ex: "").
  * 4. Retournez le message censuré.
  *
  * Exemple de test :
@@ -24,3 +25,18 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+let message = ["noob", "idiot", "nul"]
+let newMessage = "You are a nOOb and an iDiot"
+function filtrerMessage(message){
+    let words = newMessage.split(" ")
+    
+   for(let i=0; i<words.length; i++){
+    let newWords = words[i].toLowerCase();
+     if(message.includes(newWords)){
+         words[i] = "*".repeat(newWords.length)
+     }
+   }
+   return words.join(" ")
+    
+}
+console.log(filtrerMessage(message))
