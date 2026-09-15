@@ -18,3 +18,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function syracuse(n) {
+    let etapes = 0;
+
+    while (n !== 1) {
+        if (n % 2 === 0) {
+            n = n / 2;
+        } else {
+            n = n * 3 + 1;
+        }
+        etapes++;
+    }
+
+    return etapes;
+}
+
+console.log(syracuse(15)); 
