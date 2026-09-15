@@ -19,3 +19,18 @@
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
 
+function scraperPages(totalItems, itemsPerPage) {
+    let page = 1;
+    let remainingItems = totalItems;
+
+    while (remainingItems > 0) {
+        let currentBatch = (remainingItems >= itemsPerPage) ? itemsPerPage : remainingItems;
+
+        console.log(`Scraping page ${page} (${currentBatch} items)`);
+
+        remainingItems -= currentBatch;
+        page++;
+    }
+}
+
+scraperPages(45, 10);
