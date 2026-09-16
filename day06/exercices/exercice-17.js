@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Vous avez scrappé une liste de prix : [{ article: "PC", prix: "1500$" }, { article: "Souris", prix: "25$" }]. Écrivez une fonction qui modifie les objets pour que le prix devienne un vrai Number (enlever le "$").
+ * Vous avez scrappé une liste de prix : [{ article: "PC", prix: "1500$" },
+ *  { article: "Souris", prix: "25$" }]. Écrivez une fonction qui modifie les objets pour que le prix devienne un vrai Number (enlever le "$").
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-17
  * ▶️ Commande : node day06/exercices/exercice-17.js
@@ -15,3 +16,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let  listPrix = [
+    { article: "PC", prix: "1500$" },
+    { article: "Souris", prix: "25$" }
+]
+function newPrix(liste){
+    for(let i=0; i< liste.length; i++){
+        let money = liste[i].prix.replace("$", "")
+        liste[i].prix= Number(money)
+    }
+    return liste
+}
+console.log(newPrix(listPrix))
