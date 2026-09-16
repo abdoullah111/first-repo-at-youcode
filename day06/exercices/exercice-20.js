@@ -15,3 +15,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let original = {
+    nom: "Sara",
+    adresse: {
+        ville: "Rabat",
+        codePostal: 10000
+    }
+};
+
+let copieShallow = { ...original };
+
+copieShallow.adresse.ville = "Casablanca";
+
+console.log(original.adresse.ville);     
+console.log(copieShallow.adresse.ville);  
+
+                
